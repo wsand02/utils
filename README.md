@@ -5,3 +5,8 @@
 [![GitHub repo size](https://img.shields.io/github/repo-size/wsand02/utils)](https://github.com/wsand02/utils/)
 
 Yet another utils library.
+
+## Installation
+```
+go get github.com/wsand02/utils
+```
