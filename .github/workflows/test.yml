@@ -1,0 +1,26 @@
+name: test
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+env:
+  utils_bool_test: true
+  utils_int64_test: 55
+  utils_uint64_test: 69
+  utils_str_test: uwu
+
+jobs:
+  test-everything:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.23'
+    - name: Run tests
+      run: go test -v ./...
