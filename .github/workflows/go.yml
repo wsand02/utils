@@ -9,6 +9,12 @@ on:
   pull_request:
     branches: [ "master" ]
 
+env:
+  utils_bool_test: true
+  utils_int64_test: 55
+  utils_uint64_test: 69
+  utils_str_test: uwu
+
 jobs:
 
   build:
