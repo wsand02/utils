@@ -1,7 +1,5 @@
 module github.com/wsand02/utils
 
-go 1.24.0
+go 1.25.0
 
-toolchain go1.24.2
-
-require golang.org/x/crypto v0.45.0
+require golang.org/x/crypto v0.52.0
